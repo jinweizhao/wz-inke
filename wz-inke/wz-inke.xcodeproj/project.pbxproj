@@ -12,9 +12,12 @@
 		AF7F46141EACF8570077105E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7F46131EACF8570077105E /* Assets.xcassets */; };
 		AF7F46171EACF8570077105E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7F46151EACF8570077105E /* LaunchScreen.storyboard */; };
 		AF7F463C1EACFB860077105E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F46361EACFB860077105E /* AppDelegate.m */; };
+		BF5C65AAC89526D3F9B8FA04 /* libPods-wz-inke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F729960E06E1043E4A3225D /* libPods-wz-inke.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49B772471EADA5BD003FDF57 /* inke.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inke.pch; sourceTree = "<group>"; };
+		8F729960E06E1043E4A3225D /* libPods-wz-inke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wz-inke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7F46041EACF8570077105E /* wz-inke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wz-inke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7F46081EACF8570077105E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF7F46111EACF8570077105E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -23,6 +26,8 @@
 		AF7F46181EACF8570077105E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF7F46351EACFB860077105E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF7F46361EACFB860077105E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D22C3D19C6B4D06E103F2000 /* Pods-wz-inke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wz-inke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wz-inke/Pods-wz-inke.debug.xcconfig"; sourceTree = "<group>"; };
+		EC60B0C503FF180DA4466C6E /* Pods-wz-inke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wz-inke.release.xcconfig"; path = "Pods/Target Support Files/Pods-wz-inke/Pods-wz-inke.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5C65AAC89526D3F9B8FA04 /* libPods-wz-inke.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6169A3FB5C8E513E1B1010CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D22C3D19C6B4D06E103F2000 /* Pods-wz-inke.debug.xcconfig */,
+				EC60B0C503FF180DA4466C6E /* Pods-wz-inke.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AF7F45FB1EACF8570077105E = {
 			isa = PBXGroup;
 			children = (
 				AF7F46061EACF8570077105E /* wz-inke */,
 				AF7F46051EACF8570077105E /* Products */,
+				6169A3FB5C8E513E1B1010CA /* Pods */,
+				E1992E0970866607C6E5FD1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -255,6 +272,7 @@
 			children = (
 				AF7F46351EACFB860077105E /* AppDelegate.h */,
 				AF7F46361EACFB860077105E /* AppDelegate.m */,
+				49B772471EADA5BD003FDF57 /* inke.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -298,6 +316,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		E1992E0970866607C6E5FD1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F729960E06E1043E4A3225D /* libPods-wz-inke.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -305,9 +331,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF7F461B1EACF8570077105E /* Build configuration list for PBXNativeTarget "wz-inke" */;
 			buildPhases = (
+				B52EE048B9AD8D1D3AA90314 /* [CP] Check Pods Manifest.lock */,
 				AF7F46001EACF8570077105E /* Sources */,
 				AF7F46011EACF8570077105E /* Frameworks */,
 				AF7F46021EACF8570077105E /* Resources */,
+				3AA5D525873007DA8BC9CA40 /* [CP] Embed Pods Frameworks */,
+				7661502C949F40B721AA282B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -364,6 +393,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AA5D525873007DA8BC9CA40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wz-inke/Pods-wz-inke-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7661502C949F40B721AA282B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wz-inke/Pods-wz-inke-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B52EE048B9AD8D1D3AA90314 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF7F46001EACF8570077105E /* Sources */ = {
@@ -491,9 +568,11 @@
 		};
 		AF7F461C1EACF8570077105E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D22C3D19C6B4D06E103F2000 /* Pods-wz-inke.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N729L435R7;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/wz-inke/Class/Other/inke.pch";
 				INFOPLIST_FILE = "wz-inke/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -504,9 +583,11 @@
 		};
 		AF7F461D1EACF8570077105E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC60B0C503FF180DA4466C6E /* Pods-wz-inke.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N729L435R7;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/wz-inke/Class/Other/inke.pch";
 				INFOPLIST_FILE = "wz-inke/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -534,6 +615,7 @@
 				AF7F461D1EACF8570077105E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
