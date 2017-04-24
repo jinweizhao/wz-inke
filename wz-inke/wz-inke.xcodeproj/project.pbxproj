@@ -61,6 +61,7 @@
 		49B772701EADEC3A003FDF57 /* WZNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WZNearViewController.xib; path = "wz-inke/Class/Other/WZNearViewController.xib"; sourceTree = SOURCE_ROOT; };
 		49B772731EADF4EB003FDF57 /* WZMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZMainTopView.h; path = "wz-inke/Class/Other/WZMainTopView.h"; sourceTree = SOURCE_ROOT; };
 		49B772741EADF4EB003FDF57 /* WZMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZMainTopView.m; path = "wz-inke/Class/Other/WZMainTopView.m"; sourceTree = SOURCE_ROOT; };
+		49B772761EADFFF0003FDF57 /* APIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIConfig.h; path = "wz-inke/Class/Other/APIConfig.h"; sourceTree = SOURCE_ROOT; };
 		8F729960E06E1043E4A3225D /* libPods-wz-inke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wz-inke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7F46041EACF8570077105E /* wz-inke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wz-inke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7F46081EACF8570077105E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -314,6 +315,7 @@
 		AF7F46331EACFB860077105E /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				49B772761EADFFF0003FDF57 /* APIConfig.h */,
 			);
 			path = Network;
 			sourceTree = "<group>";
