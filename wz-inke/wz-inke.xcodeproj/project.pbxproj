@@ -17,6 +17,13 @@
 		49B7725E1EADD767003FDF57 /* WZBaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7725D1EADD767003FDF57 /* WZBaseNavViewController.m */; };
 		49B772621EADE2CD003FDF57 /* WZLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B772601EADE2CD003FDF57 /* WZLaunchViewController.m */; };
 		49B772631EADE2CD003FDF57 /* WZLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B772611EADE2CD003FDF57 /* WZLaunchViewController.xib */; };
+		49B772671EADEC0D003FDF57 /* WZFocuseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B772651EADEC0D003FDF57 /* WZFocuseViewController.m */; };
+		49B772681EADEC0D003FDF57 /* WZFocuseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B772661EADEC0D003FDF57 /* WZFocuseViewController.xib */; };
+		49B7726C1EADEC23003FDF57 /* WZHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7726A1EADEC23003FDF57 /* WZHotViewController.m */; };
+		49B7726D1EADEC23003FDF57 /* WZHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B7726B1EADEC23003FDF57 /* WZHotViewController.xib */; };
+		49B772711EADEC3A003FDF57 /* WZNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7726F1EADEC3A003FDF57 /* WZNearViewController.m */; };
+		49B772721EADEC3A003FDF57 /* WZNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B772701EADEC3A003FDF57 /* WZNearViewController.xib */; };
+		49B772751EADF4EB003FDF57 /* WZMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B772741EADF4EB003FDF57 /* WZMainTopView.m */; };
 		AF7F46091EACF8570077105E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F46081EACF8570077105E /* main.m */; };
 		AF7F46141EACF8570077105E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7F46131EACF8570077105E /* Assets.xcassets */; };
 		AF7F463C1EACFB860077105E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F46361EACFB860077105E /* AppDelegate.m */; };
@@ -43,6 +50,17 @@
 		49B7725F1EADE2CD003FDF57 /* WZLaunchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZLaunchViewController.h; path = "wz-inke/Class/Other/WZLaunchViewController.h"; sourceTree = SOURCE_ROOT; };
 		49B772601EADE2CD003FDF57 /* WZLaunchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZLaunchViewController.m; path = "wz-inke/Class/Other/WZLaunchViewController.m"; sourceTree = SOURCE_ROOT; };
 		49B772611EADE2CD003FDF57 /* WZLaunchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WZLaunchViewController.xib; path = "wz-inke/Class/Other/WZLaunchViewController.xib"; sourceTree = SOURCE_ROOT; };
+		49B772641EADEC0D003FDF57 /* WZFocuseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZFocuseViewController.h; path = "wz-inke/Class/Other/WZFocuseViewController.h"; sourceTree = SOURCE_ROOT; };
+		49B772651EADEC0D003FDF57 /* WZFocuseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZFocuseViewController.m; path = "wz-inke/Class/Other/WZFocuseViewController.m"; sourceTree = SOURCE_ROOT; };
+		49B772661EADEC0D003FDF57 /* WZFocuseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WZFocuseViewController.xib; path = "wz-inke/Class/Other/WZFocuseViewController.xib"; sourceTree = SOURCE_ROOT; };
+		49B772691EADEC23003FDF57 /* WZHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZHotViewController.h; path = "wz-inke/Class/Other/WZHotViewController.h"; sourceTree = SOURCE_ROOT; };
+		49B7726A1EADEC23003FDF57 /* WZHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZHotViewController.m; path = "wz-inke/Class/Other/WZHotViewController.m"; sourceTree = SOURCE_ROOT; };
+		49B7726B1EADEC23003FDF57 /* WZHotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WZHotViewController.xib; path = "wz-inke/Class/Other/WZHotViewController.xib"; sourceTree = SOURCE_ROOT; };
+		49B7726E1EADEC3A003FDF57 /* WZNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZNearViewController.h; path = "wz-inke/Class/Other/WZNearViewController.h"; sourceTree = SOURCE_ROOT; };
+		49B7726F1EADEC3A003FDF57 /* WZNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZNearViewController.m; path = "wz-inke/Class/Other/WZNearViewController.m"; sourceTree = SOURCE_ROOT; };
+		49B772701EADEC3A003FDF57 /* WZNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WZNearViewController.xib; path = "wz-inke/Class/Other/WZNearViewController.xib"; sourceTree = SOURCE_ROOT; };
+		49B772731EADF4EB003FDF57 /* WZMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZMainTopView.h; path = "wz-inke/Class/Other/WZMainTopView.h"; sourceTree = SOURCE_ROOT; };
+		49B772741EADF4EB003FDF57 /* WZMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZMainTopView.m; path = "wz-inke/Class/Other/WZMainTopView.m"; sourceTree = SOURCE_ROOT; };
 		8F729960E06E1043E4A3225D /* libPods-wz-inke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wz-inke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7F46041EACF8570077105E /* wz-inke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wz-inke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7F46081EACF8570077105E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -339,6 +357,8 @@
 		AF7F463A1EACFB860077105E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				49B772731EADF4EB003FDF57 /* WZMainTopView.h */,
+				49B772741EADF4EB003FDF57 /* WZMainTopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -352,6 +372,15 @@
 				49B772571EADD67E003FDF57 /* WZMeViewController.h */,
 				49B772581EADD67E003FDF57 /* WZMeViewController.m */,
 				49B772591EADD67E003FDF57 /* WZMeViewController.xib */,
+				49B772641EADEC0D003FDF57 /* WZFocuseViewController.h */,
+				49B772651EADEC0D003FDF57 /* WZFocuseViewController.m */,
+				49B772661EADEC0D003FDF57 /* WZFocuseViewController.xib */,
+				49B772691EADEC23003FDF57 /* WZHotViewController.h */,
+				49B7726A1EADEC23003FDF57 /* WZHotViewController.m */,
+				49B7726B1EADEC23003FDF57 /* WZHotViewController.xib */,
+				49B7726E1EADEC3A003FDF57 /* WZNearViewController.h */,
+				49B7726F1EADEC3A003FDF57 /* WZNearViewController.m */,
+				49B772701EADEC3A003FDF57 /* WZNearViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -428,8 +457,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF7F46141EACF8570077105E /* Assets.xcassets in Resources */,
+				49B772681EADEC0D003FDF57 /* WZFocuseViewController.xib in Resources */,
 				49B7725B1EADD67E003FDF57 /* WZMeViewController.xib in Resources */,
+				49B7726D1EADEC23003FDF57 /* WZHotViewController.xib in Resources */,
 				49B772631EADE2CD003FDF57 /* WZLaunchViewController.xib in Resources */,
+				49B772721EADEC3A003FDF57 /* WZNearViewController.xib in Resources */,
 				49B772561EADD66D003FDF57 /* WZMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,13 +521,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B772671EADEC0D003FDF57 /* WZFocuseViewController.m in Sources */,
 				AF7F463C1EACFB860077105E /* AppDelegate.m in Sources */,
 				AF7F46091EACF8570077105E /* main.m in Sources */,
 				49B7724E1EADCE4A003FDF57 /* WZTabBar.m in Sources */,
 				49B7724B1EADCE23003FDF57 /* WZTabBarViewController.m in Sources */,
 				49B7725E1EADD767003FDF57 /* WZBaseNavViewController.m in Sources */,
 				49B7725A1EADD67E003FDF57 /* WZMeViewController.m in Sources */,
+				49B772711EADEC3A003FDF57 /* WZNearViewController.m in Sources */,
 				49B772621EADE2CD003FDF57 /* WZLaunchViewController.m in Sources */,
+				49B772751EADF4EB003FDF57 /* WZMainTopView.m in Sources */,
+				49B7726C1EADEC23003FDF57 /* WZHotViewController.m in Sources */,
 				49B772551EADD66D003FDF57 /* WZMainViewController.m in Sources */,
 				49B772511EADD651003FDF57 /* WZBaseViewController.m in Sources */,
 			);

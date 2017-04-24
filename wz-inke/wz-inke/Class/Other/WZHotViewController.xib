@@ -9,9 +9,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WZMainViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WZHotViewController">
             <connections>
-                <outlet property="contentScrollView" destination="YM2-H8-8tP" id="uMk-8P-lym"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,21 +19,12 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YM2-H8-8tP">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="rRT-lu-IMS"/>
-                    </connections>
-                </scrollView>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7pk-Z7-zei">
+                    <rect key="frame" x="163" y="306" width="51" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </switch>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstAttribute="bottom" secondItem="YM2-H8-8tP" secondAttribute="bottom" id="QBO-Me-7yS"/>
-                <constraint firstItem="YM2-H8-8tP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VSh-Hu-q2Z"/>
-                <constraint firstItem="YM2-H8-8tP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qft-lv-xKe"/>
-                <constraint firstAttribute="trailing" secondItem="YM2-H8-8tP" secondAttribute="trailing" id="zbe-bo-aMP"/>
-            </constraints>
-            <point key="canvasLocation" x="-248" y="85"/>
         </view>
     </objects>
 </document>

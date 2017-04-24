@@ -18,6 +18,9 @@
     [super viewDidLoad];
     
     
+    self.view.backgroundColor = RGB(arc4random_uniform(255.0), arc4random_uniform(255.0), arc4random_uniform(255.0));
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
