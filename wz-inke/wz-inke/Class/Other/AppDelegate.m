@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WZTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,9 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
+    WZTabBarViewController *main = [[WZTabBarViewController alloc]init];
     
+    self.window.rootViewController = main;
     
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

@@ -1,0 +1,66 @@
+//
+//  WZTabBarViewController.m
+//  wz-inke
+//
+//  Created by KDB on 2017/4/24.
+//  Copyright © 2017年 jwz. All rights reserved.
+//
+
+#import "WZTabBarViewController.h"
+#import "WZTabBar.h"
+#import "WZBaseNavViewController.h"
+
+@interface WZTabBarViewController ()<WZTabBarDelegate>
+
+@property (nonatomic ,strong)WZTabBar *wzTabbar;
+
+@end
+
+@implementation WZTabBarViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    //加载控制器
+    
+    [self configViewControllers];
+    
+    //加载tabbar
+    [self.tabBar addSubview:self.wzTabbar];
+    
+}
+-(void)configViewControllers
+{
+    NSMutableArray * array = [NSMutableArray arrayWithArray:@[@"WZMainViewController",@"WZMeViewController"]];
+    
+    for (NSInteger i = 0; i < array.count; i ++) {
+        
+        NSString *vcName = array[i];
+        
+        UIViewController *vc = [[NSClassFromString(vcName) alloc] init];
+        
+        WZBaseNavViewController *nav = [[WZBaseNavViewController alloc]initWithRootViewController:vc];
+        
+        [array replaceObjectAtIndex:i withObject:nav];
+        
+    }
+    
+    self.viewControllers = array;
+    
+}
+
+-(void)tabbar:(WZTabBar *)tabbar clickButton:(WZItemType)index
+{
+    self.selectedIndex = index - WZItemTypeLive;
+}
+-(WZTabBar *)wzTabbar
+{
+    if (!_wzTabbar) {
+        _wzTabbar = [[WZTabBar alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
+        _wzTabbar.delegate = self;
+    }
+    return _wzTabbar;
+}
+
+
+@end
