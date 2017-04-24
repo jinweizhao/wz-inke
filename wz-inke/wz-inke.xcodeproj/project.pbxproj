@@ -16,6 +16,7 @@
 
 /* Begin PBXFileReference section */
 		49B772471EADA5BD003FDF57 /* inke.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inke.pch; sourceTree = "<group>"; };
+		49B772481EADCBE4003FDF57 /* WZMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMacros.h; sourceTree = "<group>"; };
 		8F729960E06E1043E4A3225D /* libPods-wz-inke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wz-inke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7F46041EACF8570077105E /* wz-inke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wz-inke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7F46081EACF8570077105E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -270,6 +271,7 @@
 				AF7F46351EACFB860077105E /* AppDelegate.h */,
 				AF7F46361EACFB860077105E /* AppDelegate.m */,
 				49B772471EADA5BD003FDF57 /* inke.pch */,
+				49B772481EADCBE4003FDF57 /* WZMacros.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -350,6 +352,7 @@
 		AF7F45FC1EACF8570077105E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WZ;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = jwz;
 				TargetAttributes = {
