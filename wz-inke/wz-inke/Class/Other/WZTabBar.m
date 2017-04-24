@@ -12,6 +12,9 @@
 
 @property (nonatomic ,strong)NSArray *dataList;
 @property (nonatomic ,strong)UIButton *lastItem;
+
+@property (nonatomic ,strong)UIButton *cameraButton;
+
 @end
 
 @implementation WZTabBar
@@ -35,7 +38,7 @@
             }
             [self addSubview:item];
         }
-        
+        [self addSubview:self.cameraButton];
     }
     return self;
 }
@@ -48,6 +51,10 @@
     
     if (self.block) {
         self.block(self, item.tag);
+    }
+    
+    if (item.tag == WZItemTypeLaunch) {
+        return;
     }
     
     self.lastItem.selected = NO;
@@ -77,9 +84,21 @@
             btn.frame = CGRectMake((btn.tag - WZItemTypeLive) * width, 0, width, self.frame.size.height);
         }
     }
+    [self.cameraButton sizeToFit];
+    self.cameraButton.center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height - 50);
     
 }
-
+-(UIButton *)cameraButton
+{
+    if (!_cameraButton) {
+        _cameraButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_cameraButton setImage:[UIImage imageNamed:@"tab_launch"] forState:UIControlStateNormal];
+        [_cameraButton sizeToFit];
+        _cameraButton.tag = WZItemTypeLaunch;
+        [_cameraButton addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _cameraButton;
+}
 -(NSArray *)dataList
 {
     if (!_dataList) {

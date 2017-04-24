@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, WZItemType) {
-    WZItemTypeLive = 100,
+    WZItemTypeLaunch = 10,//启动直播
+    WZItemTypeLive = 100,//展示直播
     WZItemTypeMe = 0,
 };
 

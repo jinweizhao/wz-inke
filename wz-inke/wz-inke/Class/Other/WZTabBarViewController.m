@@ -9,6 +9,7 @@
 #import "WZTabBarViewController.h"
 #import "WZTabBar.h"
 #import "WZBaseNavViewController.h"
+#import "WZLaunchViewController.h"
 
 @interface WZTabBarViewController ()<WZTabBarDelegate>
 
@@ -28,6 +29,9 @@
     //加载tabbar
     [self.tabBar addSubview:self.wzTabbar];
     
+    //tabbar的阴影线
+//    [[UITabBar appearance]setBackgroundImage:[UIImage new]];
+//    [[UITabBar appearance]setShadowImage:[UIImage new]];
 }
 -(void)configViewControllers
 {
@@ -51,7 +55,15 @@
 
 -(void)tabbar:(WZTabBar *)tabbar clickButton:(WZItemType)index
 {
-    self.selectedIndex = index - WZItemTypeLive;
+    if (index != WZItemTypeLaunch) {
+        self.selectedIndex = index - WZItemTypeLive;
+        return;
+    }
+    
+    WZLaunchViewController *vc = [[WZLaunchViewController alloc]init];
+    
+    [self presentViewController:vc animated:YES completion:nil];
+    
 }
 -(WZTabBar *)wzTabbar
 {
