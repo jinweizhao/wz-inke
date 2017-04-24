@@ -10,7 +10,6 @@
 		AF7F46091EACF8570077105E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F46081EACF8570077105E /* main.m */; };
 		AF7F46121EACF8570077105E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7F46101EACF8570077105E /* Main.storyboard */; };
 		AF7F46141EACF8570077105E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7F46131EACF8570077105E /* Assets.xcassets */; };
-		AF7F46171EACF8570077105E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF7F46151EACF8570077105E /* LaunchScreen.storyboard */; };
 		AF7F463C1EACFB860077105E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F46361EACFB860077105E /* AppDelegate.m */; };
 		BF5C65AAC89526D3F9B8FA04 /* libPods-wz-inke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F729960E06E1043E4A3225D /* libPods-wz-inke.a */; };
 /* End PBXBuildFile section */
@@ -22,7 +21,6 @@
 		AF7F46081EACF8570077105E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AF7F46111EACF8570077105E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AF7F46131EACF8570077105E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AF7F46161EACF8570077105E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF7F46181EACF8570077105E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF7F46351EACFB860077105E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF7F46361EACFB860077105E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,7 +81,6 @@
 			children = (
 				AF7F46101EACF8570077105E /* Main.storyboard */,
 				AF7F46131EACF8570077105E /* Assets.xcassets */,
-				AF7F46151EACF8570077105E /* LaunchScreen.storyboard */,
 				AF7F46181EACF8570077105E /* Info.plist */,
 				AF7F46081EACF8570077105E /* main.m */,
 			);
@@ -386,7 +383,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF7F46171EACF8570077105E /* LaunchScreen.storyboard in Resources */,
 				AF7F46141EACF8570077105E /* Assets.xcassets in Resources */,
 				AF7F46121EACF8570077105E /* Main.storyboard in Resources */,
 			);
@@ -461,14 +457,6 @@
 				AF7F46111EACF8570077105E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AF7F46151EACF8570077105E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AF7F46161EACF8570077105E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -571,13 +559,15 @@
 			baseConfigurationReference = D22C3D19C6B4D06E103F2000 /* Pods-wz-inke.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = N729L435R7;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wz-inke/Class/Other/inke.pch";
 				INFOPLIST_FILE = "wz-inke/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Carduo.wz-inke";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -586,13 +576,15 @@
 			baseConfigurationReference = EC60B0C503FF180DA4466C6E /* Pods-wz-inke.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = N729L435R7;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wz-inke/Class/Other/inke.pch";
 				INFOPLIST_FILE = "wz-inke/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Carduo.wz-inke";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
