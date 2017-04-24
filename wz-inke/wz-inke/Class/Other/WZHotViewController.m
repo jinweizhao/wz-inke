@@ -7,6 +7,7 @@
 //
 
 #import "WZHotViewController.h"
+#import "WZLiveHandler.h"
 
 @interface WZHotViewController ()
 
@@ -16,7 +17,24 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [self initUI];
+    
+    [self loadData];
+    
+}
+-(void)initUI
+{
+    
+}
+
+- (void)loadData
+{
+    [WZLiveHandler executeGetHotLiveTaskWithSuccess:^(id obj) {
+        NSLog(@"obj = %@",obj);
+    } failed:^(id obj) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

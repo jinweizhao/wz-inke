@@ -27,6 +27,15 @@
 		AF7F46091EACF8570077105E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F46081EACF8570077105E /* main.m */; };
 		AF7F46141EACF8570077105E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7F46131EACF8570077105E /* Assets.xcassets */; };
 		AF7F463C1EACFB860077105E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F46361EACFB860077105E /* AppDelegate.m */; };
+		AF856FF21EAE378900B0EF75 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AF856FEF1EAE378900B0EF75 /* HttpTool.m */; };
+		AF856FF31EAE378900B0EF75 /* UIImageView+SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = AF856FF11EAE378900B0EF75 /* UIImageView+SDWebImage.m */; };
+		AF856FF61EAE3A7000B0EF75 /* WZBaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF856FF51EAE3A7000B0EF75 /* WZBaseHandler.m */; };
+		AF856FF91EAE3B1A00B0EF75 /* WZLiveHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AF856FF81EAE3B1A00B0EF75 /* WZLiveHandler.m */; };
+		AF8570151EAE433000B0EF75 /* Creator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF85700C1EAE433000B0EF75 /* Creator.m */; };
+		AF8570161EAE433000B0EF75 /* Extra.m in Sources */ = {isa = PBXBuildFile; fileRef = AF85700E1EAE433000B0EF75 /* Extra.m */; };
+		AF8570171EAE433000B0EF75 /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8570101EAE433000B0EF75 /* Label.m */; };
+		AF8570181EAE433000B0EF75 /* Live.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8570121EAE433000B0EF75 /* Live.m */; };
+		AF8570191EAE433000B0EF75 /* RootClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AF8570141EAE433000B0EF75 /* RootClass.m */; };
 		BF5C65AAC89526D3F9B8FA04 /* libPods-wz-inke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F729960E06E1043E4A3225D /* libPods-wz-inke.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +78,24 @@
 		AF7F46181EACF8570077105E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF7F46351EACFB860077105E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF7F46361EACFB860077105E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AF856FEE1EAE378900B0EF75 /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		AF856FEF1EAE378900B0EF75 /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		AF856FF01EAE378900B0EF75 /* UIImageView+SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SDWebImage.h"; sourceTree = "<group>"; };
+		AF856FF11EAE378900B0EF75 /* UIImageView+SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SDWebImage.m"; sourceTree = "<group>"; };
+		AF856FF41EAE3A7000B0EF75 /* WZBaseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZBaseHandler.h; sourceTree = "<group>"; };
+		AF856FF51EAE3A7000B0EF75 /* WZBaseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZBaseHandler.m; sourceTree = "<group>"; };
+		AF856FF71EAE3B1A00B0EF75 /* WZLiveHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLiveHandler.h; sourceTree = "<group>"; };
+		AF856FF81EAE3B1A00B0EF75 /* WZLiveHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZLiveHandler.m; sourceTree = "<group>"; };
+		AF85700B1EAE433000B0EF75 /* Creator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Creator.h; sourceTree = "<group>"; };
+		AF85700C1EAE433000B0EF75 /* Creator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Creator.m; sourceTree = "<group>"; };
+		AF85700D1EAE433000B0EF75 /* Extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Extra.h; sourceTree = "<group>"; };
+		AF85700E1EAE433000B0EF75 /* Extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Extra.m; sourceTree = "<group>"; };
+		AF85700F1EAE433000B0EF75 /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label.h; sourceTree = "<group>"; };
+		AF8570101EAE433000B0EF75 /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Label.m; sourceTree = "<group>"; };
+		AF8570111EAE433000B0EF75 /* Live.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Live.h; sourceTree = "<group>"; };
+		AF8570121EAE433000B0EF75 /* Live.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Live.m; sourceTree = "<group>"; };
+		AF8570131EAE433000B0EF75 /* RootClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootClass.h; sourceTree = "<group>"; };
+		AF8570141EAE433000B0EF75 /* RootClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootClass.m; sourceTree = "<group>"; };
 		D22C3D19C6B4D06E103F2000 /* Pods-wz-inke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wz-inke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wz-inke/Pods-wz-inke.debug.xcconfig"; sourceTree = "<group>"; };
 		EC60B0C503FF180DA4466C6E /* Pods-wz-inke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wz-inke.release.xcconfig"; path = "Pods/Target Support Files/Pods-wz-inke/Pods-wz-inke.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -158,6 +185,8 @@
 				49B772501EADD651003FDF57 /* WZBaseViewController.m */,
 				49B7725C1EADD767003FDF57 /* WZBaseNavViewController.h */,
 				49B7725D1EADD767003FDF57 /* WZBaseNavViewController.m */,
+				AF856FF41EAE3A7000B0EF75 /* WZBaseHandler.h */,
+				AF856FF51EAE3A7000B0EF75 /* WZBaseHandler.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -316,6 +345,10 @@
 			isa = PBXGroup;
 			children = (
 				49B772761EADFFF0003FDF57 /* APIConfig.h */,
+				AF856FEE1EAE378900B0EF75 /* HttpTool.h */,
+				AF856FEF1EAE378900B0EF75 /* HttpTool.m */,
+				AF856FF01EAE378900B0EF75 /* UIImageView+SDWebImage.h */,
+				AF856FF11EAE378900B0EF75 /* UIImageView+SDWebImage.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -345,6 +378,8 @@
 		AF7F46381EACFB860077105E /* Handler */ = {
 			isa = PBXGroup;
 			children = (
+				AF856FF71EAE3B1A00B0EF75 /* WZLiveHandler.h */,
+				AF856FF81EAE3B1A00B0EF75 /* WZLiveHandler.m */,
 			);
 			path = Handler;
 			sourceTree = "<group>";
@@ -352,6 +387,16 @@
 		AF7F46391EACFB860077105E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AF85700B1EAE433000B0EF75 /* Creator.h */,
+				AF85700C1EAE433000B0EF75 /* Creator.m */,
+				AF85700D1EAE433000B0EF75 /* Extra.h */,
+				AF85700E1EAE433000B0EF75 /* Extra.m */,
+				AF85700F1EAE433000B0EF75 /* Label.h */,
+				AF8570101EAE433000B0EF75 /* Label.m */,
+				AF8570111EAE433000B0EF75 /* Live.h */,
+				AF8570121EAE433000B0EF75 /* Live.m */,
+				AF8570131EAE433000B0EF75 /* RootClass.h */,
+				AF8570141EAE433000B0EF75 /* RootClass.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -513,7 +558,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -523,19 +568,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8570181EAE433000B0EF75 /* Live.m in Sources */,
+				AF8570161EAE433000B0EF75 /* Extra.m in Sources */,
 				49B772671EADEC0D003FDF57 /* WZFocuseViewController.m in Sources */,
 				AF7F463C1EACFB860077105E /* AppDelegate.m in Sources */,
 				AF7F46091EACF8570077105E /* main.m in Sources */,
 				49B7724E1EADCE4A003FDF57 /* WZTabBar.m in Sources */,
+				AF8570191EAE433000B0EF75 /* RootClass.m in Sources */,
+				AF856FF61EAE3A7000B0EF75 /* WZBaseHandler.m in Sources */,
 				49B7724B1EADCE23003FDF57 /* WZTabBarViewController.m in Sources */,
+				AF856FF31EAE378900B0EF75 /* UIImageView+SDWebImage.m in Sources */,
 				49B7725E1EADD767003FDF57 /* WZBaseNavViewController.m in Sources */,
 				49B7725A1EADD67E003FDF57 /* WZMeViewController.m in Sources */,
 				49B772711EADEC3A003FDF57 /* WZNearViewController.m in Sources */,
+				AF856FF91EAE3B1A00B0EF75 /* WZLiveHandler.m in Sources */,
 				49B772621EADE2CD003FDF57 /* WZLaunchViewController.m in Sources */,
 				49B772751EADF4EB003FDF57 /* WZMainTopView.m in Sources */,
 				49B7726C1EADEC23003FDF57 /* WZHotViewController.m in Sources */,
 				49B772551EADD66D003FDF57 /* WZMainViewController.m in Sources */,
 				49B772511EADD651003FDF57 /* WZBaseViewController.m in Sources */,
+				AF8570151EAE433000B0EF75 /* Creator.m in Sources */,
+				AF8570171EAE433000B0EF75 /* Label.m in Sources */,
+				AF856FF21EAE378900B0EF75 /* HttpTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
