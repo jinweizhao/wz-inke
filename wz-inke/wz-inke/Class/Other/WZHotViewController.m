@@ -26,6 +26,7 @@
 }
 -(void)initUI
 {
+    self.tableView.rowHeight = SCREEN_WIDTH + 70;
     [self.tableView registerNib:[UINib nibWithNibName:@"WZLiveCell" bundle:nil] forCellReuseIdentifier:@"WZLiveCell"];
 }
 
@@ -50,6 +51,7 @@
 {
     WZLiveCell *cell = [tableView dequeueReusableCellWithIdentifier:@"WZLiveCell"];
     
+    cell.live = self.dataList[indexPath.row];
     
     return cell;
 }

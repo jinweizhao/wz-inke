@@ -23,7 +23,6 @@
 		49B772671EADEC0D003FDF57 /* WZFocuseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B772651EADEC0D003FDF57 /* WZFocuseViewController.m */; };
 		49B772681EADEC0D003FDF57 /* WZFocuseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B772661EADEC0D003FDF57 /* WZFocuseViewController.xib */; };
 		49B7726C1EADEC23003FDF57 /* WZHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7726A1EADEC23003FDF57 /* WZHotViewController.m */; };
-		49B7726D1EADEC23003FDF57 /* WZHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B7726B1EADEC23003FDF57 /* WZHotViewController.xib */; };
 		49B772711EADEC3A003FDF57 /* WZNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7726F1EADEC3A003FDF57 /* WZNearViewController.m */; };
 		49B772721EADEC3A003FDF57 /* WZNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B772701EADEC3A003FDF57 /* WZNearViewController.xib */; };
 		49B772751EADF4EB003FDF57 /* WZMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B772741EADF4EB003FDF57 /* WZMainTopView.m */; };
@@ -72,7 +71,6 @@
 		49B772661EADEC0D003FDF57 /* WZFocuseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WZFocuseViewController.xib; path = "wz-inke/Class/Other/WZFocuseViewController.xib"; sourceTree = SOURCE_ROOT; };
 		49B772691EADEC23003FDF57 /* WZHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZHotViewController.h; path = "wz-inke/Class/Other/WZHotViewController.h"; sourceTree = SOURCE_ROOT; };
 		49B7726A1EADEC23003FDF57 /* WZHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZHotViewController.m; path = "wz-inke/Class/Other/WZHotViewController.m"; sourceTree = SOURCE_ROOT; };
-		49B7726B1EADEC23003FDF57 /* WZHotViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WZHotViewController.xib; path = "wz-inke/Class/Other/WZHotViewController.xib"; sourceTree = SOURCE_ROOT; };
 		49B7726E1EADEC3A003FDF57 /* WZNearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZNearViewController.h; path = "wz-inke/Class/Other/WZNearViewController.h"; sourceTree = SOURCE_ROOT; };
 		49B7726F1EADEC3A003FDF57 /* WZNearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZNearViewController.m; path = "wz-inke/Class/Other/WZNearViewController.m"; sourceTree = SOURCE_ROOT; };
 		49B772701EADEC3A003FDF57 /* WZNearViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WZNearViewController.xib; path = "wz-inke/Class/Other/WZNearViewController.xib"; sourceTree = SOURCE_ROOT; };
@@ -437,7 +435,6 @@
 				49B772661EADEC0D003FDF57 /* WZFocuseViewController.xib */,
 				49B772691EADEC23003FDF57 /* WZHotViewController.h */,
 				49B7726A1EADEC23003FDF57 /* WZHotViewController.m */,
-				49B7726B1EADEC23003FDF57 /* WZHotViewController.xib */,
 				49B7726E1EADEC3A003FDF57 /* WZNearViewController.h */,
 				49B7726F1EADEC3A003FDF57 /* WZNearViewController.m */,
 				49B772701EADEC3A003FDF57 /* WZNearViewController.xib */,
@@ -520,7 +517,6 @@
 				AF7F46141EACF8570077105E /* Assets.xcassets in Resources */,
 				49B772681EADEC0D003FDF57 /* WZFocuseViewController.xib in Resources */,
 				49B7725B1EADD67E003FDF57 /* WZMeViewController.xib in Resources */,
-				49B7726D1EADEC23003FDF57 /* WZHotViewController.xib in Resources */,
 				49B772631EADE2CD003FDF57 /* WZLaunchViewController.xib in Resources */,
 				49B772721EADEC3A003FDF57 /* WZNearViewController.xib in Resources */,
 				49B772561EADD66D003FDF57 /* WZMainViewController.xib in Resources */,

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Live.h"
 
 @interface WZLiveCell : UITableViewCell
+
+@property (nonatomic ,strong)Live *live;
 
 @end
