@@ -8,6 +8,6 @@
 
 #import "WZBaseViewController.h"
 
-@interface WZHotViewController : WZBaseViewController
+@interface WZHotViewController : UITableViewController
 
 @end

@@ -16,5 +16,9 @@ NSString *const kExtraLabel = @"label";
 @end
 @implementation Extra
 
++(NSDictionary *)mj_objectClassInArray
+{
+    return @{@"label":@"Label"};
+}
 
 @end

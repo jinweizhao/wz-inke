@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4929C6611EAEEFB600EF284C /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4929C6601EAEEFB600EF284C /* MJExtensionConfig.m */; };
+		4929C6651EAEF53900EF284C /* WZLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4929C6631EAEF53900EF284C /* WZLiveCell.m */; };
+		4929C6661EAEF53900EF284C /* WZLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4929C6641EAEF53900EF284C /* WZLiveCell.xib */; };
 		49B7724B1EADCE23003FDF57 /* WZTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7724A1EADCE23003FDF57 /* WZTabBarViewController.m */; };
 		49B7724E1EADCE4A003FDF57 /* WZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7724D1EADCE4A003FDF57 /* WZTabBar.m */; };
 		49B772511EADD651003FDF57 /* WZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B772501EADD651003FDF57 /* WZBaseViewController.m */; };
@@ -40,6 +43,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4929C65F1EAEEFB600EF284C /* MJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
+		4929C6601EAEEFB600EF284C /* MJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
+		4929C6621EAEF53900EF284C /* WZLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZLiveCell.h; path = "wz-inke/Class/Other/WZLiveCell.h"; sourceTree = SOURCE_ROOT; };
+		4929C6631EAEF53900EF284C /* WZLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZLiveCell.m; path = "wz-inke/Class/Other/WZLiveCell.m"; sourceTree = SOURCE_ROOT; };
+		4929C6641EAEF53900EF284C /* WZLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WZLiveCell.xib; path = "wz-inke/Class/Other/WZLiveCell.xib"; sourceTree = SOURCE_ROOT; };
 		49B772471EADA5BD003FDF57 /* inke.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inke.pch; sourceTree = "<group>"; };
 		49B772481EADCBE4003FDF57 /* WZMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMacros.h; sourceTree = "<group>"; };
 		49B772491EADCE23003FDF57 /* WZTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZTabBarViewController.h; path = "wz-inke/Class/Other/WZTabBarViewController.h"; sourceTree = SOURCE_ROOT; };
@@ -360,6 +368,8 @@
 				AF7F46361EACFB860077105E /* AppDelegate.m */,
 				49B772471EADA5BD003FDF57 /* inke.pch */,
 				49B772481EADCBE4003FDF57 /* WZMacros.h */,
+				4929C65F1EAEEFB600EF284C /* MJExtensionConfig.h */,
+				4929C6601EAEEFB600EF284C /* MJExtensionConfig.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -406,6 +416,9 @@
 			children = (
 				49B772731EADF4EB003FDF57 /* WZMainTopView.h */,
 				49B772741EADF4EB003FDF57 /* WZMainTopView.m */,
+				4929C6621EAEF53900EF284C /* WZLiveCell.h */,
+				4929C6631EAEF53900EF284C /* WZLiveCell.m */,
+				4929C6641EAEF53900EF284C /* WZLiveCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -503,6 +516,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4929C6661EAEF53900EF284C /* WZLiveCell.xib in Resources */,
 				AF7F46141EACF8570077105E /* Assets.xcassets in Resources */,
 				49B772681EADEC0D003FDF57 /* WZFocuseViewController.xib in Resources */,
 				49B7725B1EADD67E003FDF57 /* WZMeViewController.xib in Resources */,
@@ -574,6 +588,7 @@
 				AF7F463C1EACFB860077105E /* AppDelegate.m in Sources */,
 				AF7F46091EACF8570077105E /* main.m in Sources */,
 				49B7724E1EADCE4A003FDF57 /* WZTabBar.m in Sources */,
+				4929C6611EAEEFB600EF284C /* MJExtensionConfig.m in Sources */,
 				AF8570191EAE433000B0EF75 /* RootClass.m in Sources */,
 				AF856FF61EAE3A7000B0EF75 /* WZBaseHandler.m in Sources */,
 				49B7724B1EADCE23003FDF57 /* WZTabBarViewController.m in Sources */,
@@ -583,6 +598,7 @@
 				49B772711EADEC3A003FDF57 /* WZNearViewController.m in Sources */,
 				AF856FF91EAE3B1A00B0EF75 /* WZLiveHandler.m in Sources */,
 				49B772621EADE2CD003FDF57 /* WZLaunchViewController.m in Sources */,
+				4929C6651EAEF53900EF284C /* WZLiveCell.m in Sources */,
 				49B772751EADF4EB003FDF57 /* WZMainTopView.m in Sources */,
 				49B7726C1EADEC23003FDF57 /* WZHotViewController.m in Sources */,
 				49B772551EADD66D003FDF57 /* WZMainViewController.m in Sources */,

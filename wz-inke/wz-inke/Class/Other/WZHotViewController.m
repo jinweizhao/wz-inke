@@ -8,9 +8,10 @@
 
 #import "WZHotViewController.h"
 #import "WZLiveHandler.h"
+#import "WZLiveCell.h"
 
 @interface WZHotViewController ()
-
+@property (nonatomic ,strong)NSMutableArray *dataList;
 @end
 
 @implementation WZHotViewController
@@ -25,31 +26,38 @@
 }
 -(void)initUI
 {
-    
+    [self.tableView registerNib:[UINib nibWithNibName:@"WZLiveCell" bundle:nil] forCellReuseIdentifier:@"WZLiveCell"];
 }
 
 - (void)loadData
 {
     [WZLiveHandler executeGetHotLiveTaskWithSuccess:^(id obj) {
-        NSLog(@"obj = %@",obj);
-    } failed:^(id obj) {
         
+        [self.dataList addObjectsFromArray:obj];
+        [self.tableView reloadData];
+        
+    } failed:^(id obj) {
+        NSLog(@"error = %@",obj);
     }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataList.count;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    WZLiveCell *cell = [tableView dequeueReusableCellWithIdentifier:@"WZLiveCell"];
+    
+    
+    return cell;
 }
-*/
-
+-(NSMutableArray *)dataList
+{
+    if (!_dataList) {
+        _dataList = [NSMutableArray array];
+    }
+    return _dataList;
+}
 @end

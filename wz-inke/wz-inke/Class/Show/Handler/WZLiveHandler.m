@@ -8,6 +8,7 @@
 
 #import "WZLiveHandler.h"
 #import "HttpTool.h"
+#import "Live.h"
 
 @implementation WZLiveHandler
 
@@ -18,7 +19,10 @@
         if ([json[@"dm_error"] integerValue] != 0) {
             failed(json[@"error_msg"]);
         }else{
-            success(json);
+            
+            NSArray *lives = [Live mj_objectArrayWithKeyValuesArray:json[@"lives"]];
+            
+            success(lives);
         }
         
     } failure:^(NSError *error) {

@@ -15,8 +15,14 @@ NSString *const kRootClassExpireTime = @"expire_time";
 NSString *const kRootClassLives = @"lives";
 
 @interface RootClass ()
+
+
+
 @end
 @implementation RootClass
-
++(NSDictionary *)mj_objectClassInArray
+{
+    return @{@"lives":@"Live"};
+}
 
 @end
