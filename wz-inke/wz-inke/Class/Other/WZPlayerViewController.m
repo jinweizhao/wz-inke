@@ -13,7 +13,8 @@
 @interface WZPlayerViewController ()
 
 @property (nonatomic ,strong)id<IJKMediaPlayback> player;
-
+@property (nonatomic ,strong)UIImageView *blurImgView;
+@property (nonatomic ,strong)UIButton *closeBtn;
 @end
 
 @implementation WZPlayerViewController
@@ -23,6 +24,7 @@
     
     [self initPlayer];
     
+    [self initUI];
     
 }
 
@@ -34,7 +36,21 @@
     self.player.shouldAutoplay = YES;
     [self.view addSubview:self.player.view];
 }
-
+- (void)initUI{
+    
+    self.view.backgroundColor = [UIColor blackColor];
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.bounds];
+    self.blurImgView = imageView;
+    [self.blurImgView downloadImage:self.live.creator.portrait placeholder:@"default_room"];
+    [self.view addSubview:self.blurImgView];
+    //毛玻璃效果
+    UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    UIVisualEffectView *visual = [[UIVisualEffectView alloc]initWithEffect:blur];
+    visual.frame = self.blurImgView.bounds;
+    [self.blurImgView addSubview:visual];
+    
+}
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -65,6 +81,7 @@
     
     if ((loadState & IJKMPMovieLoadStatePlaythroughOK) != 0) {
         NSLog(@"loadStateDidChange: IJKMPMovieLoadStatePlaythroughOK: %d\n", (int)loadState);
+        self.blurImgView.hidden = YES;
     } else if ((loadState & IJKMPMovieLoadStateStalled) != 0) {
         NSLog(@"loadStateDidChange: IJKMPMovieLoadStateStalled: %d\n", (int)loadState);
     } else {
@@ -180,4 +197,22 @@
     [[NSNotificationCenter defaultCenter]removeObserver:self name:IJKMPMediaPlaybackIsPreparedToPlayDidChangeNotification object:_player];
     [[NSNotificationCenter defaultCenter]removeObserver:self name:IJKMPMoviePlayerPlaybackStateDidChangeNotification object:_player];
 }
+
+-(UIButton *)closeBtn
+{
+    if (!_closeBtn) {
+        _closeBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_closeBtn setImage:[UIImage imageNamed:@"mg_room_btn_guan_h"] forState:UIControlStateNormal];
+        [_closeBtn addTarget:self action:@selector(closeClick) forControlEvents:
+         UIControlEventTouchUpInside];
+        [_closeBtn sizeToFit];
+        _closeBtn.frame = CGRectMake(SCREEN_WIDTH - _closeBtn.width - 10, SCREEN_HEIGHT - _closeBtn.height - 10, _closeBtn.width, _closeBtn.height);
+    }
+    return _closeBtn;
+}
+- (void)closeClick
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end
