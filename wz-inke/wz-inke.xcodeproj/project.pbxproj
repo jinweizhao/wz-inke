@@ -10,6 +10,20 @@
 		4929C6611EAEEFB600EF284C /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4929C6601EAEEFB600EF284C /* MJExtensionConfig.m */; };
 		4929C6651EAEF53900EF284C /* WZLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4929C6631EAEF53900EF284C /* WZLiveCell.m */; };
 		4929C6661EAEF53900EF284C /* WZLiveCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4929C6641EAEF53900EF284C /* WZLiveCell.xib */; };
+		493DAE5F1EB041AD00943F3A /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 493DAE5E1EB041AD00943F3A /* libstdc++.tbd */; };
+		497548791EAF4EF60019655D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497548781EAF4EF60019655D /* AudioToolbox.framework */; };
+		4975487B1EAF4EFE0019655D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4975487A1EAF4EFE0019655D /* AVFoundation.framework */; };
+		4975487D1EAF4F060019655D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4975487C1EAF4F060019655D /* CoreGraphics.framework */; };
+		4975487F1EAF4F0E0019655D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4975487E1EAF4F0E0019655D /* CoreMedia.framework */; };
+		497548811EAF4F150019655D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497548801EAF4F150019655D /* CoreVideo.framework */; };
+		497548831EAF4F220019655D /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 497548821EAF4F220019655D /* libbz2.tbd */; };
+		497548851EAF4F280019655D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 497548841EAF4F280019655D /* libz.tbd */; };
+		497548871EAF4F300019655D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497548861EAF4F300019655D /* MediaPlayer.framework */; };
+		497548891EAF4F3A0019655D /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497548881EAF4F3A0019655D /* MobileCoreServices.framework */; };
+		4975488B1EAF4F410019655D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4975488A1EAF4F410019655D /* OpenGLES.framework */; };
+		4975488D1EAF4F490019655D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4975488C1EAF4F490019655D /* QuartzCore.framework */; };
+		4975488F1EAF4F510019655D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4975488E1EAF4F500019655D /* UIKit.framework */; };
+		497548911EAF4F570019655D /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497548901EAF4F570019655D /* VideoToolbox.framework */; };
 		49B7724B1EADCE23003FDF57 /* WZTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7724A1EADCE23003FDF57 /* WZTabBarViewController.m */; };
 		49B7724E1EADCE4A003FDF57 /* WZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7724D1EADCE4A003FDF57 /* WZTabBar.m */; };
 		49B772511EADD651003FDF57 /* WZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B772501EADD651003FDF57 /* WZBaseViewController.m */; };
@@ -26,6 +40,7 @@
 		49B772711EADEC3A003FDF57 /* WZNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B7726F1EADEC3A003FDF57 /* WZNearViewController.m */; };
 		49B772721EADEC3A003FDF57 /* WZNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B772701EADEC3A003FDF57 /* WZNearViewController.xib */; };
 		49B772751EADF4EB003FDF57 /* WZMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B772741EADF4EB003FDF57 /* WZMainTopView.m */; };
+		49CD2DC41EB03DE500386CE7 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CD2DBD1EB03D4800386CE7 /* IJKMediaFramework.framework */; };
 		AF7F46091EACF8570077105E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F46081EACF8570077105E /* main.m */; };
 		AF7F46141EACF8570077105E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7F46131EACF8570077105E /* Assets.xcassets */; };
 		AF7F463C1EACFB860077105E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F46361EACFB860077105E /* AppDelegate.m */; };
@@ -41,12 +56,57 @@
 		BF5C65AAC89526D3F9B8FA04 /* libPods-wz-inke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F729960E06E1043E4A3225D /* libPods-wz-inke.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		49CD2DBC1EB03D4800386CE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49CD2DB61EB03D4800386CE7 /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E654EA8A1B6B27E600B0F2D0;
+			remoteInfo = IJKMediaFramework;
+		};
+		49CD2DBE1EB03D4800386CE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49CD2DB61EB03D4800386CE7 /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5450B0431E63EA4300568494;
+			remoteInfo = IJKMediaFrameworkWithSSL;
+		};
+		49CD2DC01EB03D4800386CE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49CD2DB61EB03D4800386CE7 /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E654EA941B6B27E600B0F2D0;
+			remoteInfo = IJKMediaFrameworkTests;
+		};
+		49CD2DC21EB03D5E00386CE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49CD2DB61EB03D4800386CE7 /* IJKMediaPlayer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E654EA891B6B27E600B0F2D0;
+			remoteInfo = IJKMediaFramework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		4929C65F1EAEEFB600EF284C /* MJExtensionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
 		4929C6601EAEEFB600EF284C /* MJExtensionConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
 		4929C6621EAEF53900EF284C /* WZLiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZLiveCell.h; path = "wz-inke/Class/Other/WZLiveCell.h"; sourceTree = SOURCE_ROOT; };
 		4929C6631EAEF53900EF284C /* WZLiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZLiveCell.m; path = "wz-inke/Class/Other/WZLiveCell.m"; sourceTree = SOURCE_ROOT; };
 		4929C6641EAEF53900EF284C /* WZLiveCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WZLiveCell.xib; path = "wz-inke/Class/Other/WZLiveCell.xib"; sourceTree = SOURCE_ROOT; };
+		493DAE5E1EB041AD00943F3A /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		497548781EAF4EF60019655D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		4975487A1EAF4EFE0019655D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4975487C1EAF4F060019655D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4975487E1EAF4F0E0019655D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		497548801EAF4F150019655D /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		497548821EAF4F220019655D /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		497548841EAF4F280019655D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		497548861EAF4F300019655D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		497548881EAF4F3A0019655D /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		4975488A1EAF4F410019655D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		4975488C1EAF4F490019655D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4975488E1EAF4F500019655D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		497548901EAF4F570019655D /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		49B772471EADA5BD003FDF57 /* inke.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inke.pch; sourceTree = "<group>"; };
 		49B772481EADCBE4003FDF57 /* WZMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMacros.h; sourceTree = "<group>"; };
 		49B772491EADCE23003FDF57 /* WZTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZTabBarViewController.h; path = "wz-inke/Class/Other/WZTabBarViewController.h"; sourceTree = SOURCE_ROOT; };
@@ -77,6 +137,7 @@
 		49B772731EADF4EB003FDF57 /* WZMainTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZMainTopView.h; path = "wz-inke/Class/Other/WZMainTopView.h"; sourceTree = SOURCE_ROOT; };
 		49B772741EADF4EB003FDF57 /* WZMainTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZMainTopView.m; path = "wz-inke/Class/Other/WZMainTopView.m"; sourceTree = SOURCE_ROOT; };
 		49B772761EADFFF0003FDF57 /* APIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIConfig.h; path = "wz-inke/Class/Other/APIConfig.h"; sourceTree = SOURCE_ROOT; };
+		49CD2DB61EB03D4800386CE7 /* IJKMediaPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IJKMediaPlayer.xcodeproj; path = "../../ijkplayer-ios/ios/IJKMediaPlayer/IJKMediaPlayer.xcodeproj"; sourceTree = "<group>"; };
 		8F729960E06E1043E4A3225D /* libPods-wz-inke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wz-inke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7F46041EACF8570077105E /* wz-inke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wz-inke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7F46081EACF8570077105E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -111,6 +172,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493DAE5F1EB041AD00943F3A /* libstdc++.tbd in Frameworks */,
+				49CD2DC41EB03DE500386CE7 /* IJKMediaFramework.framework in Frameworks */,
+				497548911EAF4F570019655D /* VideoToolbox.framework in Frameworks */,
+				4975488F1EAF4F510019655D /* UIKit.framework in Frameworks */,
+				4975488D1EAF4F490019655D /* QuartzCore.framework in Frameworks */,
+				4975488B1EAF4F410019655D /* OpenGLES.framework in Frameworks */,
+				497548891EAF4F3A0019655D /* MobileCoreServices.framework in Frameworks */,
+				497548871EAF4F300019655D /* MediaPlayer.framework in Frameworks */,
+				497548851EAF4F280019655D /* libz.tbd in Frameworks */,
+				497548831EAF4F220019655D /* libbz2.tbd in Frameworks */,
+				497548811EAF4F150019655D /* CoreVideo.framework in Frameworks */,
+				4975487F1EAF4F0E0019655D /* CoreMedia.framework in Frameworks */,
+				4975487D1EAF4F060019655D /* CoreGraphics.framework in Frameworks */,
+				4975487B1EAF4EFE0019655D /* AVFoundation.framework in Frameworks */,
+				497548791EAF4EF60019655D /* AudioToolbox.framework in Frameworks */,
 				BF5C65AAC89526D3F9B8FA04 /* libPods-wz-inke.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +194,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49CD2DB71EB03D4800386CE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49CD2DBD1EB03D4800386CE7 /* IJKMediaFramework.framework */,
+				49CD2DBF1EB03D4800386CE7 /* IJKMediaFrameworkWithSSL.framework */,
+				49CD2DC11EB03D4800386CE7 /* IJKMediaFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6169A3FB5C8E513E1B1010CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +216,7 @@
 		AF7F45FB1EACF8570077105E = {
 			isa = PBXGroup;
 			children = (
+				49CD2DB61EB03D4800386CE7 /* IJKMediaPlayer.xcodeproj */,
 				AF7F46061EACF8570077105E /* wz-inke */,
 				AF7F46051EACF8570077105E /* Products */,
 				6169A3FB5C8E513E1B1010CA /* Pods */,
@@ -445,6 +532,20 @@
 		E1992E0970866607C6E5FD1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				493DAE5E1EB041AD00943F3A /* libstdc++.tbd */,
+				497548901EAF4F570019655D /* VideoToolbox.framework */,
+				4975488E1EAF4F500019655D /* UIKit.framework */,
+				4975488C1EAF4F490019655D /* QuartzCore.framework */,
+				4975488A1EAF4F410019655D /* OpenGLES.framework */,
+				497548881EAF4F3A0019655D /* MobileCoreServices.framework */,
+				497548861EAF4F300019655D /* MediaPlayer.framework */,
+				497548841EAF4F280019655D /* libz.tbd */,
+				497548821EAF4F220019655D /* libbz2.tbd */,
+				497548801EAF4F150019655D /* CoreVideo.framework */,
+				4975487E1EAF4F0E0019655D /* CoreMedia.framework */,
+				4975487C1EAF4F060019655D /* CoreGraphics.framework */,
+				4975487A1EAF4EFE0019655D /* AVFoundation.framework */,
+				497548781EAF4EF60019655D /* AudioToolbox.framework */,
 				8F729960E06E1043E4A3225D /* libPods-wz-inke.a */,
 			);
 			name = Frameworks;
@@ -467,6 +568,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				49CD2DC31EB03D5E00386CE7 /* PBXTargetDependency */,
 			);
 			name = "wz-inke";
 			productName = "wz-inke";
@@ -501,12 +603,42 @@
 			mainGroup = AF7F45FB1EACF8570077105E;
 			productRefGroup = AF7F46051EACF8570077105E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 49CD2DB71EB03D4800386CE7 /* Products */;
+					ProjectRef = 49CD2DB61EB03D4800386CE7 /* IJKMediaPlayer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AF7F46031EACF8570077105E /* wz-inke */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		49CD2DBD1EB03D4800386CE7 /* IJKMediaFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IJKMediaFramework.framework;
+			remoteRef = 49CD2DBC1EB03D4800386CE7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		49CD2DBF1EB03D4800386CE7 /* IJKMediaFrameworkWithSSL.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = IJKMediaFrameworkWithSSL.framework;
+			remoteRef = 49CD2DBE1EB03D4800386CE7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		49CD2DC11EB03D4800386CE7 /* IJKMediaFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = IJKMediaFrameworkTests.xctest;
+			remoteRef = 49CD2DC01EB03D4800386CE7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AF7F46021EACF8570077105E /* Resources */ = {
@@ -606,6 +738,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49CD2DC31EB03D5E00386CE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IJKMediaFramework;
+			targetProxy = 49CD2DC21EB03D5E00386CE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AF7F46191EACF8570077105E /* Debug */ = {
@@ -707,6 +847,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = N729L435R7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/wz-inke/Class/Lib",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wz-inke/Class/Other/inke.pch";
 				INFOPLIST_FILE = "wz-inke/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -724,6 +869,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = N729L435R7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/wz-inke/Class/Lib",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/wz-inke/Class/Other/inke.pch";
 				INFOPLIST_FILE = "wz-inke/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
