@@ -32,4 +32,23 @@
     
 }
 
++(void)executeGetNearLiveTaskWithSuccess:(SuccessBlock)success failed:(FailedBlock)failed
+{
+    [HttpTool getWithPath:API_NearLive params:nil success:^(id json) {
+        
+        if ([json[@"dm_error"] integerValue] != 0) {
+            failed(json[@"error_msg"]);
+        }else{
+            
+            NSArray *lives = [Live mj_objectArrayWithKeyValuesArray:json[@"lives"]];
+            
+            success(lives);
+        }
+        
+    } failure:^(NSError *error) {
+        failed(error);
+    }];
+}
+
+
 @end

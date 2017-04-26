@@ -7,8 +7,17 @@
 //
 
 #import "WZNearViewController.h"
+#import "WZLiveHandler.h"
+#import "WZNearLiveCell.h"
 
-@interface WZNearViewController ()
+
+#define kMargin 5
+#define KItemWidth 100
+
+@interface WZNearViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (nonatomic ,strong)NSArray *dataList;
 
 @end
 
@@ -16,12 +25,55 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [self initUI];
+    
+    [self loadData];
+    
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.dataList.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    WZNearLiveCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"WZNearLiveCell" forIndexPath:indexPath];
+    
+    cell.live = self.dataList[indexPath.item];
+    
+    return cell;
+}
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSInteger count = self.collectionView.width / KItemWidth ;
+    CGFloat etraWidth = (self.collectionView.width - kMargin * (count + 1)) / count;
+    return CGSizeMake(etraWidth, etraWidth + 20);
+}
+
+-(void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    WZNearLiveCell *c = (WZNearLiveCell *)cell;
+    
+    [c showAnimation];
+    
+}
+
+- (void)initUI{
+    
+    [self.collectionView registerNib:[UINib nibWithNibName:@"WZNearLiveCell" bundle:nil] forCellWithReuseIdentifier:@"WZNearLiveCell"];
+    
+}
+- (void)loadData{
+    [WZLiveHandler executeGetNearLiveTaskWithSuccess:^(id obj) {
+        self.dataList = obj;
+        [self.collectionView reloadData];
+    } failed:^(id obj) {
+        NSLog(@"error = %@",obj);
+    }];
 }
 
 /*
