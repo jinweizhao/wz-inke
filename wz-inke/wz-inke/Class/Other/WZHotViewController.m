@@ -9,6 +9,7 @@
 #import "WZHotViewController.h"
 #import "WZLiveHandler.h"
 #import "WZLiveCell.h"
+#import "WZPlayerViewController.h"
 
 @interface WZHotViewController ()
 @property (nonatomic ,strong)NSMutableArray *dataList;
