@@ -46,9 +46,10 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-//    Live *live = self.dataList[indexPath.row];
-    
-    
+    Live *live = self.dataList[indexPath.row];
+    WZPlayerViewController *playVC = [[WZPlayerViewController alloc]init];
+    playVC.live = live;
+    [self.navigationController pushViewController:playVC animated:YES];
     
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

@@ -7,7 +7,10 @@
 //
 
 #import "WZBaseViewController.h"
+#import "Live.h"
 
 @interface WZPlayerViewController : WZBaseViewController
+
+@property (nonatomic ,strong)Live *live;
 
 @end
