@@ -9,6 +9,7 @@
 #import "WZLiveHandler.h"
 #import "HttpTool.h"
 #import "Live.h"
+#import "Flow.h"
 
 @implementation WZLiveHandler
 
@@ -40,7 +41,7 @@
             failed(json[@"error_msg"]);
         }else{
             
-            NSArray *lives = [Live mj_objectArrayWithKeyValuesArray:json[@"lives"]];
+            NSArray *lives = [Flow mj_objectArrayWithKeyValuesArray:json[@"flow"]];
             
             success(lives);
         }

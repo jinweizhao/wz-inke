@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Live.h"
+#import "Flow.h"
 @interface WZNearLiveCell : UICollectionViewCell
 
-@property (nonatomic ,strong)Live *live;
+@property (nonatomic ,strong)Flow *live;
 - (void)showAnimation;
 @end

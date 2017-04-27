@@ -23,13 +23,13 @@
     // Initialization code
 }
 
--(void)setLive:(Live *)live
+-(void)setLive:(Flow *)live
 {
     _live = live;
     
-    [self.imgView downloadImage:live.creator.portrait placeholder:@"default_room"];
+    [self.imgView downloadImage:live.info.creator.portrait placeholder:@"default_room"];
     
-    self.distanceLabel.text = live.distance;
+    self.distanceLabel.text = live.info.distance;
     
 }
 -(void)showAnimation
