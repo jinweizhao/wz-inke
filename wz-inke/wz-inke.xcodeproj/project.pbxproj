@@ -46,6 +46,7 @@
 		49B772721EADEC3A003FDF57 /* WZNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49B772701EADEC3A003FDF57 /* WZNearViewController.xib */; };
 		49B772751EADF4EB003FDF57 /* WZMainTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B772741EADF4EB003FDF57 /* WZMainTopView.m */; };
 		49EE51F41EB18E6B00C24582 /* Flow.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EE51F31EB18E6B00C24582 /* Flow.m */; };
+		49EE51F71EB19DC500C24582 /* RootTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EE51F61EB19DC500C24582 /* RootTabBar.m */; };
 		AF7F46091EACF8570077105E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F46081EACF8570077105E /* main.m */; };
 		AF7F46141EACF8570077105E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF7F46131EACF8570077105E /* Assets.xcassets */; };
 		AF7F463C1EACFB860077105E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7F46361EACFB860077105E /* AppDelegate.m */; };
@@ -121,6 +122,8 @@
 		49B772761EADFFF0003FDF57 /* APIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIConfig.h; path = "wz-inke/Class/Other/APIConfig.h"; sourceTree = SOURCE_ROOT; };
 		49EE51F21EB18E6B00C24582 /* Flow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flow.h; sourceTree = "<group>"; };
 		49EE51F31EB18E6B00C24582 /* Flow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flow.m; sourceTree = "<group>"; };
+		49EE51F51EB19DC500C24582 /* RootTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBar.h; sourceTree = "<group>"; };
+		49EE51F61EB19DC500C24582 /* RootTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBar.m; sourceTree = "<group>"; };
 		8F729960E06E1043E4A3225D /* libPods-wz-inke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wz-inke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7F46041EACF8570077105E /* wz-inke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wz-inke.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF7F46081EACF8570077105E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 			children = (
 				49B772491EADCE23003FDF57 /* WZTabBarViewController.h */,
 				49B7724A1EADCE23003FDF57 /* WZTabBarViewController.m */,
+				49EE51F51EB19DC500C24582 /* RootTabBar.h */,
+				49EE51F61EB19DC500C24582 /* RootTabBar.m */,
 				49B7724C1EADCE4A003FDF57 /* WZTabBar.h */,
 				49B7724D1EADCE4A003FDF57 /* WZTabBar.m */,
 				49B7724F1EADD651003FDF57 /* WZBaseViewController.h */,
@@ -670,6 +675,7 @@
 				AF7F46091EACF8570077105E /* main.m in Sources */,
 				49B7724E1EADCE4A003FDF57 /* WZTabBar.m in Sources */,
 				4929C6611EAEEFB600EF284C /* MJExtensionConfig.m in Sources */,
+				49EE51F71EB19DC500C24582 /* RootTabBar.m in Sources */,
 				AF8570191EAE433000B0EF75 /* RootClass.m in Sources */,
 				AF856FF61EAE3A7000B0EF75 /* WZBaseHandler.m in Sources */,
 				49B7724B1EADCE23003FDF57 /* WZTabBarViewController.m in Sources */,

@@ -10,6 +10,7 @@
 #import "WZTabBar.h"
 #import "WZBaseNavViewController.h"
 #import "WZLaunchViewController.h"
+#import "RootTabBar.h"
 
 @interface WZTabBarViewController ()<WZTabBarDelegate>
 
@@ -26,6 +27,8 @@
     
     [self configViewControllers];
     
+    
+    [self setValue:[RootTabBar new] forKeyPath:@"tabBar"];
     //加载tabbar
     [self.tabBar addSubview:self.wzTabbar];
     
@@ -52,6 +55,11 @@
     self.viewControllers = array;
     
 }
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    
+}
+
 
 -(void)tabbar:(WZTabBar *)tabbar clickButton:(WZItemType)index
 {

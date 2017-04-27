@@ -71,6 +71,20 @@
     }];
     
 }
+-(UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
+{
+    UIView *view = [super hitTest:point withEvent:event];
+    if (!view
+        && self.hidden == NO) {
+        NSLog(@"%@ = %@",NSStringFromCGRect(self.cameraButton.frame),NSStringFromCGPoint(point));
+        if (CGRectContainsPoint(self.cameraButton.frame, point)) {
+            return self.cameraButton;
+        }
+        
+    }
+    return view;
+}
+
 
 -(void)layoutSubviews
 {
@@ -85,7 +99,7 @@
         }
     }
     [self.cameraButton sizeToFit];
-    self.cameraButton.center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height - 50);
+    self.cameraButton.center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height - 35);
     
 }
 -(UIButton *)cameraButton
