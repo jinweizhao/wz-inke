@@ -76,11 +76,9 @@
     UIView *view = [super hitTest:point withEvent:event];
     if (!view
         && self.hidden == NO) {
-        NSLog(@"%@ = %@",NSStringFromCGRect(self.cameraButton.frame),NSStringFromCGPoint(point));
         if (CGRectContainsPoint(self.cameraButton.frame, point)) {
             return self.cameraButton;
         }
-        
     }
     return view;
 }
