@@ -7,6 +7,7 @@
 //
 
 #import "WZLaunchViewController.h"
+#import "LFLivePreview.h"
 
 @interface WZLaunchViewController ()
 

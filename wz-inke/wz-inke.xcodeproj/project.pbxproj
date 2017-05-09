@@ -13,6 +13,7 @@
 		493DAE5F1EB041AD00943F3A /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 493DAE5E1EB041AD00943F3A /* libstdc++.tbd */; };
 		493DAE671EB0552200943F3A /* WZPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DAE661EB0552200943F3A /* WZPlayerViewController.m */; };
 		493DAE691EB061F100943F3A /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 493DAE681EB061F100943F3A /* IJKMediaFramework.framework */; };
+		494C1A181EC197160032A4BD /* LFLivePreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 494C1A171EC197160032A4BD /* LFLivePreview.m */; };
 		497548791EAF4EF60019655D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 497548781EAF4EF60019655D /* AudioToolbox.framework */; };
 		4975487B1EAF4EFE0019655D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4975487A1EAF4EFE0019655D /* AVFoundation.framework */; };
 		4975487D1EAF4F060019655D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4975487C1EAF4F060019655D /* CoreGraphics.framework */; };
@@ -72,6 +73,8 @@
 		493DAE651EB0552200943F3A /* WZPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZPlayerViewController.h; path = "wz-inke/Class/Other/WZPlayerViewController.h"; sourceTree = SOURCE_ROOT; };
 		493DAE661EB0552200943F3A /* WZPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZPlayerViewController.m; path = "wz-inke/Class/Other/WZPlayerViewController.m"; sourceTree = SOURCE_ROOT; };
 		493DAE681EB061F100943F3A /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		494C1A161EC197160032A4BD /* LFLivePreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLivePreview.h; sourceTree = "<group>"; };
+		494C1A171EC197160032A4BD /* LFLivePreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLivePreview.m; sourceTree = "<group>"; };
 		497548781EAF4EF60019655D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		4975487A1EAF4EFE0019655D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4975487C1EAF4F060019655D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -428,6 +431,8 @@
 		AF7F46341EACFB860077105E /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				494C1A161EC197160032A4BD /* LFLivePreview.h */,
+				494C1A171EC197160032A4BD /* LFLivePreview.m */,
 				AF7F46351EACFB860077105E /* AppDelegate.h */,
 				AF7F46361EACFB860077105E /* AppDelegate.m */,
 				49B772471EADA5BD003FDF57 /* inke.pch */,
@@ -657,7 +662,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -673,6 +678,7 @@
 				49B772671EADEC0D003FDF57 /* WZFocuseViewController.m in Sources */,
 				AF7F463C1EACFB860077105E /* AppDelegate.m in Sources */,
 				AF7F46091EACF8570077105E /* main.m in Sources */,
+				494C1A181EC197160032A4BD /* LFLivePreview.m in Sources */,
 				49B7724E1EADCE4A003FDF57 /* WZTabBar.m in Sources */,
 				4929C6611EAEEFB600EF284C /* MJExtensionConfig.m in Sources */,
 				49EE51F71EB19DC500C24582 /* RootTabBar.m in Sources */,
