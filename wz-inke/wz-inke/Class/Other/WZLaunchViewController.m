@@ -24,6 +24,15 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    LFLivePreview *preView = [[LFLivePreview alloc]initWithFrame:self.view.bounds];
+    
+    [self.view addSubview:preView];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

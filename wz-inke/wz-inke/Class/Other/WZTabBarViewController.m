@@ -55,10 +55,7 @@
     self.viewControllers = array;
     
 }
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    
-}
+
 
 
 -(void)tabbar:(WZTabBar *)tabbar clickButton:(WZItemType)index
