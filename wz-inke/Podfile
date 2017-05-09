@@ -11,5 +11,5 @@ target 'wz-inke' do
   pod 'Masonry', '~> 1.0.2'
   pod 'YYKit', '~> 1.0.9'
   pod 'MJExtension', '~> 3.0.13'
-  
+  pod 'LFLiveKit'
 end
